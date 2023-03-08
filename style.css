@@ -1,0 +1,24 @@
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    background-color: rgb(233, 233, 233);
+    font-family: Arial, "Helvatica Neue", Helvetica, sans-serif;
+}
+.form__body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 330px;
+}
+.form__item,.file__item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.file__button{
+    background-color: brown;
+    max-width: 55px;
+    padding: 13px;
+    border-radius: 15px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./payper.php">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__title">отправка на почту</h1>
+                <div class="form__item">
+                    <label for="fornName" class="form__label">имя*:</label>
+                    <input id="fornName" type="text" name="name" class="form__input _req">
+                </div>
+                <div class="form__item">
+                    <label for="fornEmail" class="form__label">E-mail*:</label>
+                    <input id="fornEmail" type="text" name="email" class="form__input _req _email">
+                </div>
+                <div class="form__item">
+                    <label for="fornMassage" class="form__label">сообщение:</label>
+                    <textarea name="massage" id="formMassage" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                    <div class="from__lable">Возраст:</div>
+                    <select name="age" class="select">
+                        <option value="от 18 до 25" selected="selected">молодой</option>
+                        <option value="от 25 до 45" selected="selected">старый</option>
+                        <option value="от 45" selected="selected">супер старый</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__lable">прекрепить фото</div>
+                    <div class="file">
+                        <div class="file__item">
+                            <input accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                            <div class="file__button">выбрать</div>
+                        </div>
+                        <div id="formPreview" class="file__preview"></div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="checkbox" class="checkbox__input _req">
+                        <label for="formAgreement" class="checkbox__lable"><span>я дою свое согл бла бла бла бла <a href="#!">условия</a></span></label>
+                    </div>
+                </div>
+                <button type="submit" class="from__buttom">отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
